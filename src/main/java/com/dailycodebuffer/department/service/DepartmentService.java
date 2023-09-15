@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class DepartmentService {
     @Autowired
-    private static DepartmentRepository departmentRepository;
+    private DepartmentRepository departmentRepository;
 
     public Department saveDepartment(Department department) {
         return departmentRepository.save(department);
